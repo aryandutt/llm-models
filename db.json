@@ -1,12 +1,68 @@
 {
-    "models" : [
-        {
-            "author": "Google",
-            "avatarUrl": "https://aeiljuispo.cloudimg.io/v7/https://cdn-uploads.huggingface.co/production/uploads/5dd96eb166059660ed1ee413/WtA3YYitedOr9n02eHfJe.png?w=200&h=200&f=face",
-            "downloads": 185521,
-            "likes": 1737,
-            "model": "gemma-7b",
-            "tag": "text-generation"
-            }
-    ]
+  "models": [
+    {
+      "author": "Google",
+      "avatarUrl": "https://aeiljuispo.cloudimg.io/v7/https://cdn-uploads.huggingface.co/production/uploads/5dd96eb166059660ed1ee413/WtA3YYitedOr9n02eHfJe.png?w=200&h=200&f=face",
+      "downloads": 185521,
+      "likes": 1737,
+      "model": "gemma-7b",
+      "tag": "text-generation"
+    },
+    {
+      "author": "BigCode",
+      "avatarUrl": "https://aeiljuispo.cloudimg.io/v7/https://cdn-uploads.huggingface.co/production/uploads/1659521200179-5e48005437cb5b49818287a5.png?w=200&h=200&f=face",
+      "downloads": 2427,
+      "likes": 247,
+      "model": "starcoder2-15b",
+      "tag": "text-generation"
+    },
+    {
+      "author": "Stability AI",
+      "avatarUrl": "https://aeiljuispo.cloudimg.io/v7/https://cdn-uploads.huggingface.co/production/uploads/643feeb67bc3fbde1385cc25/7vmYr2XwVcPtkLzac_jxQ.png?w=200&h=200&f=face",
+      "downloads": 4433425,
+      "likes": 4593,
+      "model": "stable-diffusion-xl-base-1.0",
+      "tag": "text-to-image"
+    },
+    {
+      "author": "Brandon G. Neri",
+      "avatarUrl": "https://aeiljuispo.cloudimg.io/v7/https://cdn-uploads.huggingface.co/production/uploads/1669957883411-6303f37c3926de1f7ec42d3e.jpeg?w=200&h=200&f=face",
+      "downloads": 205,
+      "likes": 44,
+      "model": "pixelcascade128-v0.1",
+      "tag": "text-to-image"
+    },
+    {
+      "author": "Playground",
+      "avatarUrl": "https://aeiljuispo.cloudimg.io/v7/https://cdn-uploads.huggingface.co/production/uploads/62c627c4644269e788cfee34/mV0Cwic2o92LNKiFBbraJ.png?w=200&h=200&f=face",
+      "downloads": 27456,
+      "likes": 235,
+      "model": "playground-v2.5-1024px-aesthetic",
+      "tag": "text-to-image"
+    },
+    {
+      "author": "Microsoft",
+      "avatarUrl": "https://aeiljuispo.cloudimg.io/v7/https://cdn-uploads.huggingface.co/production/uploads/1583646260758-5e64858c87403103f9f1055d.png?w=200&h=200&f=face",
+      "downloads": 444373,
+      "likes": 2865,
+      "model": "phi-2",
+      "tag": "text-generation"
+    },
+    {
+      "author": "Stability AI",
+      "avatarUrl": "https://aeiljuispo.cloudimg.io/v7/https://cdn-uploads.huggingface.co/production/uploads/643feeb67bc3fbde1385cc25/7vmYr2XwVcPtkLzac_jxQ.png?w=200&h=200&f=face",
+      "downloads": 11411,
+      "likes": 381,
+      "model": "stable-video-diffusion-img2vid-xt-1-1",
+      "tag": "image-to-video"
+    },
+    {
+      "author": "Meta Llama 2",
+      "avatarUrl": "https://aeiljuispo.cloudimg.io/v7/https://cdn-uploads.huggingface.co/production/uploads/646cf8084eefb026fb8fd8bc/oCTqufkdTkjyGodsx1vo1.png?w=200&h=200&f=face",
+      "downloads": 1203921,
+      "likes": 2901,
+      "model": "Llama-2-7b-chat-hf",
+      "tag": "text-generation"
+    }
+  ]
 }
