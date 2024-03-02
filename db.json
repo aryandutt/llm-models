@@ -1,0 +1,12 @@
+{
+    "models" : [
+        {
+            "author": "Google",
+            "avatarUrl": "https://aeiljuispo.cloudimg.io/v7/https://cdn-uploads.huggingface.co/production/uploads/5dd96eb166059660ed1ee413/WtA3YYitedOr9n02eHfJe.png?w=200&h=200&f=face",
+            "downloads": 185521,
+            "likes": 1737,
+            "model": "gemma-7b",
+            "tag": "text-generation"
+            }
+    ]
+}
