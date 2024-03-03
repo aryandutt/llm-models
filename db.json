@@ -66,6 +66,27 @@
     }
   ],
   "starcoder2-15b": {
-    "content": "hello"
+    "content": [
+      {
+        "title": "Description",
+        "text": "The StarCoder2-15B model, developed by the BigCode project, is a powerful text generation model trained on a vast array of programming languages sourced from platforms like GitHub, Arxiv, and Wikipedia. With its impressive 15 billion parameters, this model offers extensive capabilities in generating code snippets and text relevant to programming tasks and queries."
+      },
+      {
+        "title": "Example Usage",
+        "text": "To demonstrate its usage, consider the following code snippet:\n\n```python\nfrom transformers import AutoModelForCausalLM, AutoTokenizer\n\ncheckpoint = \"bigcode/starcoder2-15b\"\ndevice = \"cuda\"\n\ntokenizer = AutoTokenizer.from_pretrained(checkpoint)\nmodel = AutoModelForCausalLM.from_pretrained(checkpoint).to(device)\n\ninputs = tokenizer.encode(\"def print_hello_world():\", return_tensors=\"pt\").to(device)\noutputs = model.generate(inputs)\nprint(tokenizer.decode(outputs[0]))\n```"
+      },
+      {
+        "title": "Potential Use Cases",
+        "text": "The StarCoder2-15B model finds applications in a wide range of scenarios within the programming domain. It can assist developers by providing code snippets, suggesting completions, or even generating documentation. Additionally, it can aid in code summarization, translation between programming languages, and code quality assessment. Its versatility and vast training data make it a valuable tool for enhancing developer productivity and efficiency."
+      },
+      {
+        "title": "Model Architecture and Training",
+        "text": "This model's architecture incorporates advanced techniques such as Grouped Query Attention and sliding window attention, allowing it to handle large-scale text generation tasks efficiently. It was trained using the Fill-in-the-Middle objective on a staggering 4+ trillion tokens, utilizing NVIDIA NeMo Framework and the powerful NVIDIA Eos Supercomputer."
+      },
+      {
+        "title": "License and Citation",
+        "text": "For developers and researchers interested in leveraging the StarCoder2-15B model, it is licensed under the BigCode OpenRAIL-M v1 license agreement. Detailed information about its training process, hardware setup, and performance metrics can be found in the associated paper, 'StarCoder 2 and The Stack v2: The Next Generation'."
+      }
+    ]
   }
 }
