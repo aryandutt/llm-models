@@ -1,14 +1,6 @@
 {
   "models": [
     {
-      "author": "Google",
-      "avatarUrl": "https://aeiljuispo.cloudimg.io/v7/https://cdn-uploads.huggingface.co/production/uploads/5dd96eb166059660ed1ee413/WtA3YYitedOr9n02eHfJe.png?w=200&h=200&f=face",
-      "downloads": 185521,
-      "likes": 1737,
-      "model": "gemma-7b",
-      "tag": "text-generation"
-    },
-    {
       "author": "BigCode",
       "avatarUrl": "https://aeiljuispo.cloudimg.io/v7/https://cdn-uploads.huggingface.co/production/uploads/1659521200179-5e48005437cb5b49818287a5.png?w=200&h=200&f=face",
       "downloads": 2427,
@@ -63,6 +55,14 @@
       "likes": 2901,
       "model": "Llama-2-7b-chat-hf",
       "tag": "text-generation"
-    }
+    },
+    {
+      "author": "mistralai",
+      "avatarUrl": "https://aeiljuispo.cloudimg.io/v7/https://cdn-uploads.huggingface.co/production/uploads/62dac1c7a8ead43d20e3e17a/wrLf5yaGC6ng4XME70w6Z.png?w=200&h=200&f=face",
+      "downloads": 1056067,
+      "model": "Mixtral-8x7B-Instruct-v0.1",
+      "likes": 3131,
+      "tag": "text-generation"
+      }
   ]
 }
