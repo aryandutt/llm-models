@@ -57,12 +57,12 @@
       "tag": "text-generation"
     },
     {
-      "author": "mistralai",
+      "author": "Mistralai",
       "avatarUrl": "https://aeiljuispo.cloudimg.io/v7/https://cdn-uploads.huggingface.co/production/uploads/62dac1c7a8ead43d20e3e17a/wrLf5yaGC6ng4XME70w6Z.png?w=200&h=200&f=face",
       "downloads": 1056067,
-      "model": "Mixtral-8x7B-Instruct-v0.1",
       "likes": 3131,
+      "model": "Mixtral-8x7B-Instruct-v0.1",
       "tag": "text-generation"
-      }
+    }
   ]
 }
