@@ -117,11 +117,11 @@
       },
       {
         "title": "Intended Uses",
-        "text": "Given the diverse training data, the Phi-2 model is best suited for prompts in the QA, chat, and code formats. Users can utilize Phi-2 to generate responses to questions, engage in conversational dialogue, or produce code snippets for various programming tasks. However, it's important to note that the model-generated outputs should be treated as suggestions or starting points, and caution should be exercised when employing them for real-world applications."
+        "text": "Given the diverse training data, the Phi-2 model is best suited for prompts in the QA, chat, and code formats. Users can utilize Phi-2 to generate responses to questions, engage in conversational dialogue, or produce code snippets for various programming tasks."
       },
       {
         "title": "Limitations of Phi-2",
-        "text": "Phi-2, like any other AI model, has certain limitations:\n\n- **Generate Inaccurate Code and Facts:** The model may produce incorrect code snippets and statements. Users should treat these outputs as suggestions rather than definitive solutions.\n- **Limited Scope for Code:** Majority of Phi-2's training data is based in Python and uses common packages. If the model generates code utilizing other packages or scripts in other languages, manual verification is recommended.\n- **Unreliable Responses to Instruction:** Phi-2 has not undergone instruction fine-tuning and may struggle to adhere to intricate or nuanced instructions provided by users.\n- **Language Limitations:** The model is primarily designed to understand standard English, and may struggle with informal language or other languages.\n- **Potential Societal Biases:** Despite efforts to ensure training data safety, Phi-2 may still reflect societal biases in its outputs, particularly if prompted to do so."
+        "text": "Phi-2, like any other AI model, has certain limitations:\n\n- **Generate Inaccurate Code and Facts:** The model may produce incorrect code snippets and statements. Users should treat these outputs as suggestions rather than definitive solutions.\n- **Limited Scope for Code:** Majority of Phi-2's training data is based in Python and uses common packages. If the model generates code utilizing other packages or scripts in other languages, manual verification is recommended."
       },
       {
         "title": "Training",
@@ -129,7 +129,7 @@
       },
       {
         "title": "License",
-        "text": "The Phi-2 model is licensed under the MIT license"
+        "text": "The Phi-2 model is licensed under the MIT license."
       }
     ]
   }
