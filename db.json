@@ -88,5 +88,21 @@
         "text": "For developers and researchers interested in leveraging the StarCoder2-15B model, it is licensed under the BigCode OpenRAIL-M v1 license agreement. Detailed information about its training process, hardware setup, and performance metrics can be found in the associated paper, 'StarCoder 2 and The Stack v2: The Next Generation'."
       }
     ]
+  },
+  "pixelcascade128-v0.1": {
+    "content": [
+      {
+        "title": "Description",
+        "text": "The PixelCascade128 v0.1 model, developed by StabilityAI, is an early version designed for generating pixel art using the LoRa for Stable Cascade Stace C framework. This version of the model is capable of creating pixelated images, although it should be noted that it may not produce pixel-perfect or grid-aligned output."
+      },
+      {
+        "title": "Example Usage",
+        "text": "To demonstrate its usage, consider the following steps:\n\n- Ensure you have ComfyUI installed and select one of the provided workflows (txt2img or img2img).\n- Make sure to use the correct Stable Cascade files (Stage A, B, and C, effnet_encoder for img2img).\n- Optimal results are obtained with Stage C/B BF16 weights.\n- To force a pixel art style, include the 'pixel art' keyword in your prompt.\n- Removing simple backgrounds can be achieved by using the 'white background' on a negative prompt.\n- Downscale x8 times with nearest neighbors or use Astropulse's Pixel Detector for achieving pixel-perfect results.\n- The model works best for 2048x2048 outputs, with optimal results obtained from img2img with 1024x1024 samples.\n- Use Euler a sampler with 20 steps for Stage C and 10 steps for Stage B for best results.\n- Note that 2048x2048 samples might generate distorted images, so using img2img with 0.7 strength is recommended.\n\nHere's an example code snippet demonstrating the usage of PixelCascade128 v0.1 model:\n\n```python\nimport torch\nfrom diffusers import StableCascadeDecoderPipeline, StableCascadePriorPipeline\n\ndevice = 'cuda'\nnum_images_per_prompt = 2\n\nprior = StableCascadePriorPipeline.from_pretrained('stabilityai/stable-cascade-prior', torch_dtype=torch.bfloat16).to(device)\ndecoder = StableCascadeDecoderPipeline.from_pretrained('stabilityai/stable-cascade', torch_dtype=torch.float16).to(device)\n\nprompt = 'Anthropomorphic cat dressed as a pilot'\nnegative_prompt = ''\n\nprior_output = prior(\n    prompt=prompt,\n    height=1024,\n    width=1024,\n    negative_prompt=negative_prompt,\n    guidance_scale=4.0,\n    num_images_per_prompt=num_images_per_prompt,\n    num_inference_steps=20\n)\ndecoder_output = decoder(\n    image_embeddings=prior_output.image_embeddings.half(),\n    prompt=prompt,\n    negative_prompt=negative_prompt,\n    guidance_scale=0.0,\n    output_type='pil',\n    num_inference_steps=10\n).images\n```"
+      },
+      {
+        "title": "Potential Use Cases",
+        "text": "The PixelCascade128 v0.1 model can be utilized in various scenarios related to pixel art creation. It can assist artists and designers in generating pixel art assets, creating retro-style graphics, or adding visual elements to games and animations. Additionally, it can be used for educational purposes to teach pixel art techniques or as a tool for generating unique avatars and icons."
+      }
+    ]
   }
 }
