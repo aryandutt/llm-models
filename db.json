@@ -104,5 +104,33 @@
         "text": "The PixelCascade128 v0.1 model can be utilized in various scenarios related to pixel art creation. It can assist artists and designers in generating pixel art assets, creating retro-style graphics, or adding visual elements to games and animations. Additionally, it can be used for educational purposes to teach pixel art techniques or as a tool for generating unique avatars and icons."
       }
     ]
+  },
+  "phi-2": {
+    "content": [
+      {
+        "title": "Description",
+        "text": "The Phi-2 model, developed by Microsoft, is a Transformer-based model with 2.7 billion parameters. Trained on a combination of data sources including NLP synthetic texts, filtered websites, and common programming languages, Phi-2 offers extensive capabilities in generating text and code relevant to various tasks and queries in natural language processing and programming domains."
+      },
+      {
+        "title": "Example Usage",
+        "text": "To demonstrate its usage, consider the following code snippet:\n\n```python\nimport torch\nfrom transformers import AutoModelForCausalLM, AutoTokenizer\n\ntorch.set_default_device('cuda')\n\nmodel = AutoModelForCausalLM.from_pretrained('microsoft/phi-2', torch_dtype='auto', trust_remote_code=True)\ntokenizer = AutoTokenizer.from_pretrained('microsoft/phi-2', trust_remote_code=True)\n\ninputs = tokenizer('''def print_prime(n):\n   \"\"\"\n   Print all primes between 1 and n\n   \"\"\"\n''', return_tensors='pt', return_attention_mask=False)\n\noutputs = model.generate(**inputs, max_length=200)\ntext = tokenizer.batch_decode(outputs)[0]\nprint(text)\n```"
+      },
+      {
+        "title": "Intended Uses",
+        "text": "Given the diverse training data, the Phi-2 model is best suited for prompts in the QA, chat, and code formats. Users can utilize Phi-2 to generate responses to questions, engage in conversational dialogue, or produce code snippets for various programming tasks. However, it's important to note that the model-generated outputs should be treated as suggestions or starting points, and caution should be exercised when employing them for real-world applications."
+      },
+      {
+        "title": "Limitations of Phi-2",
+        "text": "Phi-2, like any other AI model, has certain limitations:\n\n- **Generate Inaccurate Code and Facts:** The model may produce incorrect code snippets and statements. Users should treat these outputs as suggestions rather than definitive solutions.\n- **Limited Scope for Code:** Majority of Phi-2's training data is based in Python and uses common packages. If the model generates code utilizing other packages or scripts in other languages, manual verification is recommended.\n- **Unreliable Responses to Instruction:** Phi-2 has not undergone instruction fine-tuning and may struggle to adhere to intricate or nuanced instructions provided by users.\n- **Language Limitations:** The model is primarily designed to understand standard English, and may struggle with informal language or other languages.\n- **Potential Societal Biases:** Despite efforts to ensure training data safety, Phi-2 may still reflect societal biases in its outputs, particularly if prompted to do so."
+      },
+      {
+        "title": "Training",
+        "text": "Phi-2 was trained using a large dataset and advanced techniques:\n\n- **Architecture:** Transformer-based model with next-word prediction objective\n- **Context Length:** 2048 tokens\n- **Dataset Size:** 250 billion tokens, consisting of NLP synthetic data and filtered web data\n- **Training Tokens:** 1.4 trillion tokens\n- **GPUs:** 96xA100-80G\n- **Training Time:** 14 days\n\nSoftware used during training includes PyTorch, DeepSpeed, and Flash-Attention."
+      },
+      {
+        "title": "License",
+        "text": "The Phi-2 model is licensed under the MIT license"
+      }
+    ]
   }
 }
